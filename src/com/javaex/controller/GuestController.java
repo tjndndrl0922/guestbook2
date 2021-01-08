@@ -59,7 +59,8 @@ public class GuestController extends HttpServlet {
 			System.out.println("리스트 삭제 폼");
 
 			int no = Integer.parseInt(request.getParameter("no"));
-
+			
+			
 			RequestDispatcher rd = request.getRequestDispatcher("./WEB-INF/deleteForm.jsp");
 			rd.forward(request, response);
 

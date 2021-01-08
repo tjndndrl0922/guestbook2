@@ -44,7 +44,7 @@ System.out.println(guestList);
 			<td><%=guestList.get(i).getNo()%></td>
 			<td><%=guestList.get(i).getName()%></td>
 			<td><%=guestList.get(i).getRegDate()%></td>
-			<td><a href="/guestbook2/gbc?action=deleteForm">삭제</a></td>
+			<td><a href="/guestbook2/gbc?action=deleteForm&no=<%=guestList.get(i).getNo()%>">삭제</a></td>
 		</tr>
 		<tr>
 			<td><%=guestList.get(i).getContent()%></td>
