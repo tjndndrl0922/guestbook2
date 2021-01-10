@@ -18,7 +18,7 @@ System.out.println(guestList);
 </head>
 <body>
 	<form action="/guestbook2/gbc" method="get">
-		<table border="1">
+		<table border="1" width="400">
 			<tr>
 				<td>이름</td>
 				<td><input type="text" name="name"></td>
@@ -26,10 +26,10 @@ System.out.println(guestList);
 				<td><input type="text" name="password"></td>
 			</tr>
 			<tr>
-				<td><textarea name="content"></textarea></td>
+				<td colspan="4"><textarea name="content"></textarea></td>
 			</tr>
 			<tr>
-				<td><button type="submit">확인</button></td>
+				<td colspan="4"><button type="submit">확인</button></td>
 			</tr>
 		</table>
 		<input type="hidden" name="action" value="insert">
@@ -47,7 +47,7 @@ System.out.println(guestList);
 			<td><a href="/guestbook2/gbc?action=deleteForm&no=<%=guestList.get(i).getNo()%>">삭제</a></td>
 		</tr>
 		<tr>
-			<td><%=guestList.get(i).getContent()%></td>
+			<td colspan="4"><%=guestList.get(i).getContent()%></td>
 		</tr>
 	</table>
 
