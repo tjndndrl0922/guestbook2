@@ -15,8 +15,8 @@
 	<form action="/guestbook2/gbc" method="get">
 		 비밀번호<input type="text" name="password">
 		 <button type="submit">확인</button><br>
-		 <input type="text" name="no" value="<%=no%>">
-		 <input type="text" name="action" value="delete">
+		 <input type="hidden" name="no" value="<%=no%>">
+		 <input type="hidden" name="action" value="delete">
 	</form>
 	 <a href="/guestbook2/gbc?action=addList">메인으로 돌아가기</a>
 </body>
